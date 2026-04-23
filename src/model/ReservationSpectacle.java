@@ -4,14 +4,14 @@ public class ReservationSpectacle extends Reservation{
 	
 	int nbZone, nbChaise;
 	
-	public ReservationSpectacle(int mois, int jour, int nbZone, int nbChaise) {
-		super(mois, jour);
+	public ReservationSpectacle(int jour, int mois, int nbZone, int nbChaise) {
+		super(jour, mois);
 		this.nbZone = nbZone;
 		this.nbChaise = nbChaise;
 	}
 	
 	@Override
 	public String toString() {
-			return "Le " + jour + "/" + mois + " : zone n°" + nbZone + " à la chaise n°" + nbChaise + ".\n";
+			return "Le " + jour + "/" + mois + " : zone n°" + nbZone + " à la chaise n°" + nbChaise + ".";
 	}
 }
